@@ -12,12 +12,29 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  get: ^4.6.5
+  freezed: ^2.3.2
+  permission_handler: ^10.2.0
+  http: ^0.13.5
+  json_annotation: ^4.8.0
+  path_provider: ^2.0.12
+  url_strategy: ^0.2.0
+  auto_size_text: ^3.0.0
+  loading_animation_widget: ^1.2.0+4
+  flutter_animate: ^4.1.0
 
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  build_runner: ^2.3.3
+  build_test: ^2.1.6
+  build_web_compilers: ^3.2.7
+  responsive_framework: ^0.2.0
+  freezed_annotation: ^2.2.0
+  json_serializable: ^6.5.4
+  flutter_launcher_icons: ^0.11.0
 
   flutter_lints: ^2.0.0
 
