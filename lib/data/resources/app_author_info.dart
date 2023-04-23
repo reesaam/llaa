@@ -1,4 +1,4 @@
-class AuthorInfo {
+class AppAuthorInfo {
   static get fullName => '$firstName $lastName';
   static get firstName => 'Resam';
   static get lastName => 'Taghipour';
