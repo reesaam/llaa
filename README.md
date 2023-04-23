@@ -20,6 +20,7 @@ by Resam Taghipour
 - for web output:
 
 --> flutter build web --web-renderer canvaskit --release
+
 --> (--web-renderer html/canvaskit) for different renderers
 
 - ...
