@@ -17,7 +17,6 @@ class MainApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Language Learning Assistant App',
-      home: AppPages.startPage,
       initialRoute: AppRoutes.startPage,
       getPages: AppPages.pages,
       initialBinding: CoreBindings(),
