@@ -6,5 +6,5 @@ import 'package:llaa/data/resources/app_colors.dart';
 class AppBottomNavigationBar {
   Widget? mainBar(AppPageDetail pageDetail) => BottomNavigationBar(
       backgroundColor: AppColors.bottomBarBackground,
-      items: AppBottomNavigationBarData().data);
+      items: AppBottomNavigationBarData().getData());
 }

@@ -3,6 +3,7 @@ import 'package:llaa/data/resources/app_colors.dart';
 
 class AppThemes {
   static get mainTheme => ThemeData(
+        backgroundColor: AppColors.appBackground,
         appBarTheme: mainAppBar,
         bottomNavigationBarTheme: mainBottomBar,
       );
