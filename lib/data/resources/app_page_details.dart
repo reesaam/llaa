@@ -1,11 +1,11 @@
-import 'package:llaa/data/data_models/page_detail/page_detail.dart';
+import 'package:llaa/data/data_models/app_page_detail/app_page_detail.dart';
 
 class AppPageDetails {
   ///Admin Pages
-  static PageDetail admin = const PageDetail(pageName: 'Admin Page');
-  static PageDetail adminStartPage = const PageDetail(pageName: 'Admin Start Page');
+  static AppPageDetail admin = const AppPageDetail(pageName: 'Admin Page');
+  static AppPageDetail adminStartPage = const AppPageDetail(pageName: 'Admin Start Page');
 
   ///Main Pages
-  static PageDetail splashScreen = const PageDetail(pageName: 'Splash Screen');
-  static PageDetail homepage = const PageDetail(pageName: 'Home Page');
+  static AppPageDetail splashScreen = const AppPageDetail(pageName: 'Splash Screen');
+  static AppPageDetail homepage = const AppPageDetail(pageName: 'Home Page');
 }

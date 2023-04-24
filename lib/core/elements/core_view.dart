@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:llaa/core/elements/core_controller.dart';
-import 'package:llaa/data/data_models/page_detail/page_detail.dart';
+import 'package:llaa/data/data_models/app_page_detail/app_page_detail.dart';
 import 'package:llaa/data/resources/app_colors.dart';
 
 abstract class CoreView<Controller extends CoreController> extends GetView<Controller> {
@@ -12,7 +12,7 @@ abstract class CoreView<Controller extends CoreController> extends GetView<Contr
     return true;
   }
 
-  PageDetail get pageDetail;
+  AppPageDetail get pageDetail;
 
   ///Main Widgets
   PreferredSizeWidget? get appBar;
