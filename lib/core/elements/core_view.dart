@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:llaa/core/elements/core_controller.dart';
 
-abstract class CoreView<Controller extends CoreController>
-    extends GetView<Controller> {
+abstract class CoreView<Controller extends CoreController> extends GetView<Controller> {
   const CoreView({final Key? key}) : super(key: key);
 
   Future<bool> onWillPop() async {
@@ -20,7 +19,7 @@ abstract class CoreView<Controller extends CoreController>
 
   @override
   Widget build(BuildContext context) => WillPopScope(
-      onWillPop: () => onWillPop(), child: Obx(() => _pageScaffold));
+      onWillPop: () => onWillPop(), child: _pageScaffold);
 
   Widget get _pageScaffold => Scaffold(
         resizeToAvoidBottomInset: true,
