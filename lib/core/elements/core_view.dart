@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:llaa/core/elements/core_controller.dart';
+import 'package:llaa/data/data_models/page_detail/page_detail.dart';
+import 'package:llaa/data/resources/app_colors.dart';
 
 abstract class CoreView<Controller extends CoreController> extends GetView<Controller> {
   const CoreView({final Key? key}) : super(key: key);
@@ -9,6 +11,8 @@ abstract class CoreView<Controller extends CoreController> extends GetView<Contr
     Navigator.of(controller.context).pop();
     return true;
   }
+
+  PageDetail get pageDetail;
 
   ///Main Widgets
   PreferredSizeWidget? get appBar;
@@ -26,6 +30,7 @@ abstract class CoreView<Controller extends CoreController> extends GetView<Contr
         appBar: appBar,
         body: _pageBody,
         bottomNavigationBar: bottomNavigationBar,
+        backgroundColor: AppColors.appBackground,
       );
 
   Widget get _pageBody => SafeArea(

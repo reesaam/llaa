@@ -1,5 +1,5 @@
 class AppRoutes {
-  static const String startPage = adminStartPage;
+  static const String startPage = homePage;
 
   ///Main Pages
   static const String splashScreen = '/splash_screen';
