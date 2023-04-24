@@ -6,7 +6,10 @@ part 'app_page_detail.g.dart';
 @freezed
 class AppPageDetail with _$AppPageDetail {
   const factory AppPageDetail({
-    String? pageName,
+    @required String? pageName,
+    @required String? pageRoute,
+    @required String? bottomBarItemNumber,
+    @required String? bottomBarIcon,
   }) = _AppPageDetail;
 
   factory AppPageDetail.fromJson(Map<String, dynamic> json) =>
