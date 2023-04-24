@@ -10,6 +10,8 @@ class AppColors {
 
   ///Bottom Navigation Bar
   static Color get bottomBarBackground => _persianGreen;
+  static Color get bottomBarSelected => _white;
+  static Color get bottomBarUnselected => _white;
   static Color get bottomBarIcon => _white;
   static Color get bottomBarText => _white;
 
