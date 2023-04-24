@@ -1,13 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:llaa/app/components/app_bar/app_bar.dart';
+import 'package:llaa/app/components/bottom_navigation_bar/bottom_navigation_bar.dart';
 import 'package:llaa/app/controllers/homepage_controller.dart';
 import 'package:llaa/core/elements/core_view.dart';
+import 'package:llaa/data/data_models/page_detail/page_detail.dart';
+import 'package:llaa/data/resources/app_page_details.dart';
 
 class HomePage extends CoreView<HomePageController> {
   const HomePage({Key? key}) : super(key: key);
 
   @override
-  PreferredSizeWidget? get appBar => null;
+  PageDetail get pageDetail => AppPageDetails.homepage;
+
+  @override
+  PreferredSizeWidget? get appBar => AppAppBar().mainBar(pageDetail);
 
   @override
   Widget? get topBar => null;
@@ -16,7 +23,7 @@ class HomePage extends CoreView<HomePageController> {
   Widget? get footer => null;
 
   @override
-  Widget? get bottomNavigationBar => null;
+  Widget? get bottomNavigationBar => AppBottomNavigationBar().mainBNB(pageDetail);
 
   @override
   Widget get body => Container();
